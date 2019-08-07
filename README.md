@@ -1,8 +1,6 @@
 # remote-config-sdk-iOS
 
-[![CI Status](https://img.shields.io/travis/bogdanmatasaru/CheckMobiSDK.svg?style=flat)](https://travis-ci.org/bogdanmatasaru/CheckMobiSDK)
 [![Version](https://img.shields.io/cocoapods/v/CheckMobiSDK.svg?style=flat)](https://cocoapods.org/pods/CheckMobiSDK)
-[![License](https://img.shields.io/cocoapods/l/CheckMobiSDK.svg?style=flat)](https://cocoapods.org/pods/CheckMobiSDK)
 [![Platform](https://img.shields.io/cocoapods/p/CheckMobiSDK.svg?style=flat)](https://cocoapods.org/pods/CheckMobiSDK)
 
 *[CheckMobi][1] Remote Config SDK For iOS*
