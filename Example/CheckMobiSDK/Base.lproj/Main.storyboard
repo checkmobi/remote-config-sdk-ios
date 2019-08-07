@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CheckMobiSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrS-hj-erp" userLabel="displayValidationButton">
+                                <rect key="frame" x="86.5" y="317" width="202" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Start Number Verification"/>
+                                <connections>
+                                    <action selector="displayValidationButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="W0k-gX-0vQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Api" borderStyle="roundedRect" placeholder="API Key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1TQ-7a-ZN0" userLabel="apiKeyTextField">
+                                <rect key="frame" x="15" y="101.5" width="345" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="F7K-Lw-XZt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="API Key:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-jn-RzK">
+                                <rect key="frame" x="161" y="70" width="53.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1TQ-7a-ZN0" firstAttribute="top" secondItem="DSc-jn-RzK" secondAttribute="bottom" constant="15" id="MCa-6k-phL"/>
+                            <constraint firstItem="DSc-jn-RzK" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Rba-Kr-0fI"/>
+                            <constraint firstAttribute="trailing" secondItem="1TQ-7a-ZN0" secondAttribute="trailing" constant="15" id="Zgt-lL-Gkr"/>
+                            <constraint firstItem="hrS-hj-erp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="h0N-eU-1eF"/>
+                            <constraint firstItem="hrS-hj-erp" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="kgt-7e-1Aa"/>
+                            <constraint firstItem="DSc-jn-RzK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="qUz-el-3bR"/>
+                            <constraint firstItem="1TQ-7a-ZN0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="taO-KA-AHp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="apiKeyTextField" destination="1TQ-7a-ZN0" id="5yC-CM-4PN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-271" y="133"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_CheckMobiSDK_Tests {
+  umbrella header "Pods-CheckMobiSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

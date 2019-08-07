@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - CheckMobiSDK (0.1.0):
+    - AlamofireImage (~> 3.5)
+    - KAPinField
+    - Moya
+    - Moya-ObjectMapper
+    - ObjectMapper
+  - KAPinField (4.2.0)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya-ObjectMapper (2.8):
+    - Moya-ObjectMapper/Core (= 2.8)
+  - Moya-ObjectMapper/Core (2.8):
+    - Moya (~> 12.0)
+    - ObjectMapper (~> 3.4)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - ObjectMapper (3.4.2)
+  - Result (4.1.0)
+
+DEPENDENCIES:
+  - CheckMobiSDK (from `../`)
+  - Moya
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - KAPinField
+    - Moya
+    - Moya-ObjectMapper
+    - ObjectMapper
+    - Result
+
+EXTERNAL SOURCES:
+  CheckMobiSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  CheckMobiSDK: 45527fc29abeb572e911bcf29bbfe1b569df18a1
+  KAPinField: 2d87d77c9d1a3ee448721dcfaee1e03425d307ce
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+
+PODFILE CHECKSUM: 786e4554b161e02ab17b4d640efd8e7de96eba43
+
+COCOAPODS: 1.7.3

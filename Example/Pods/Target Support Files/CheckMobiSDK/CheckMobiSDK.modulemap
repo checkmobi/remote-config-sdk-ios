@@ -1,0 +1,6 @@
+framework module CheckMobiSDK {
+  umbrella header "CheckMobiSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
