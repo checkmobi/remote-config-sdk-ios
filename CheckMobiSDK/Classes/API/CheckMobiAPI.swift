@@ -8,7 +8,7 @@
 import Foundation
 import Moya
 
-let APIProvider = MoyaProvider<CheckMobiAPI>(plugins: [NetworkLoggerPlugin(verbose: false, cURL: false)])
+let APIProvider = MoyaProvider<CheckMobiAPI>()
 let supportedLanguages = Set<String>(["da-DK", "nl-NL", "en-AU", "en-GB", "en-US", "fr-FR", "fr-CA", "de-DE", "it-IT", "pl-PL", "pt-PT", "pt-BR", "ru-RU", "es-ES", "es-US", "sv-SE"])
 let serverErrorMessage = "We were unable to reach the server. Please try again later."
 
