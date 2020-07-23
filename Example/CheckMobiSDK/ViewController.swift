@@ -27,8 +27,8 @@ class ViewController: UIViewController {
 }
 
 extension UIViewController: CheckMobiManagerProtocol {
-    public func checkMobiManagerDidValidate(phoneNumber: String) {
-        self.alert(message: "\(phoneNumber) verified")
+    public func checkMobiManagerDidValidate(phoneNumber: String, requestId: String) {
+        self.alert(message: "\(phoneNumber) verified for requestId: \(requestId)")
     }
     
     public func checkMobiManagerUserDidDismiss() {
