@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CheckMobiSDK'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'CheckMobi Remote Config SDK For iOS'
   s.swift_version    = '5.0'
 
