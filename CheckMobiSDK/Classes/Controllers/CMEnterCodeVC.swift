@@ -155,12 +155,13 @@ class CMEnterCodeVC: UIViewController {
         }
     }
     
-    private func handleValidCodeFor(_ phoneNumber: String) {
+    private func handleValidCodeFor(_ phoneNumber: String, requestId: String) {
         UserDefaults.standard.set(phoneNumber,
                                   forKey: "CMVerifiedPhoneNumber")
         self.codeInputView.animateSuccess(with: "👍") {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {                         self.dismiss(animated: true, completion: {
-                    self.delegate?.checkMobiManagerDidValidate(phoneNumber: phoneNumber)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.dismiss(animated: true, completion: {
+                    self.delegate?.checkMobiManagerDidValidate(phoneNumber: phoneNumber, requestId: requestId)
                 })
             }
         }
@@ -191,7 +192,7 @@ class CMEnterCodeVC: UIViewController {
                 if let verificationInfo =
                     try? response.mapObject(VerificationInfo.self), verificationInfo.validated,
                     let phoneNumber = strongSelf.phoneNumber.E164Format {
-                    strongSelf.handleValidCodeFor(phoneNumber)
+                    strongSelf.handleValidCodeFor(phoneNumber, requestId: validationId)
                 } else {
                     strongSelf.handleInvalidCode()
                 }

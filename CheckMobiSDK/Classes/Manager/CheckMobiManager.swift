@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @objc public protocol CheckMobiManagerProtocol {
-    func checkMobiManagerDidValidate(phoneNumber: String)
+    func checkMobiManagerDidValidate(phoneNumber: String, requestId: String)
     func checkMobiManagerUserDidDismiss()
 }
 

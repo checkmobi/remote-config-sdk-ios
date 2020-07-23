@@ -86,12 +86,12 @@ You should also implement the `CheckMobiManagerProtocol` methods like so:
 
 *Swift*
 ```swift
-public func checkMobiManagerDidValidate(phoneNumber: String) {}
+public func checkMobiManagerDidValidate(phoneNumber: String, requestId: String) {}
 public func checkMobiManagerUserDidDismiss() {}
 ```
 *Objective-C*
 ```objc
-- (void)checkMobiManagerDidValidateWithPhoneNumber:(NSString *)phoneNumber {}
+- (void)checkMobiManagerDidValidateWithPhoneNumber:(NSString *)phoneNumber requestId:(String *)requestId {}
 - (void)checkMobiManagerUserDidDismiss {}
 ```
 
