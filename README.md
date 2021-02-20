@@ -118,8 +118,8 @@ CheckMobiSDK is available under the MIT license. See the LICENSE file for more i
 [2]:https://github.com/checkmobi/remote-config-sdk-ios/tree/master/Example
 [3]:https://developer.apple.com/xcode/
 [4]:https://github.com/checkmobi/remote-config-sdk-ios/blob/master/Example/CheckMobiSDK/ViewController.swift
-[5]:https://checkmobi.com/documentation.html#/overview
-[6]:https://checkmobi.com/documentation.html#/remote-config-profile-api
-[7]:https://checkmobi.com/documentation.html#/request_validation
-[8]:https://checkmobi.com/documentation.html#/verify_pin
-[9]:https://checkmobi.com/documentation.html#/countries-list
+[5]:https://checkmobi.com/documentation/api-reference/
+[6]:https://checkmobi.com/documentation/api-reference/#get-remote-config-profile
+[7]:https://checkmobi.com/documentation/api-reference/#request-validation
+[8]:https://checkmobi.com/documentation/api-reference/#verify-pin
+[9]:https://checkmobi.com/documentation/api-reference/#get-available-countries
